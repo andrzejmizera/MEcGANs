@@ -10,10 +10,10 @@ The McGANs folder provides the implementation of the original McGANs method, whe
 
 # Datasets
 
-The datasets described in the manuscript, i.e. the edge-intensive, large, and small datasets, are made available <a href"">here</a>.
+The datasets described in the manuscript, i.e. the edge-intensive, large, and small datasets, are made available <a href="">here</a>.
 
 # Trained Model Checkpoints
 
 # Results
 
-The full result sets are provided <a href"">here</a>.
+The full result sets are provided <a href="">here</a>.
