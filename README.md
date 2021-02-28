@@ -4,14 +4,16 @@ This repository contains the code, models, datasets, and results of the manuscri
 
 # Code
 
-The MEcGANs folder contains the implementation of our method. It extends the original McGANs method introduced in <a href="https://arxiv.org/abs/1710.04835">K. Enomoto et. al. Filmy Cloud Removal on Satellite Imagery with Multispectral Conditional Generative Adversarial Nets. In Proc. IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 1533-1541, 2017.</a>
+The MEcGANs folder contains the implementation of our method. It extends the original McGANs method introduced in <a href="https://arxiv.org/abs/1710.04835">K. Enomoto et. al. Filmy Cloud Removal on Satellite Imagery with Multispectral Conditional Generative Adversarial Nets. In Proc. IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), pp. 1533-1541, 2017.</a>
 
 The McGANs folder provides the implementation of the original McGANs method, where the generation of clouded images has been modified to comply with the method employed in MEcGANs. The original code of McGANs can be found <a href="https://github.com/enomotokenji/mcgan-cvprw2017-chainer">here</a>.
 
 # Datasets
 
-All h
+The datasets described in the manuscript, i.e. the edge-intensive, large, and small datasets, are made available <a href"">here</a>.
 
 # Trained Model Checkpoints
 
 # Results
+
+The full result sets are provided <a href"">here</a>.
