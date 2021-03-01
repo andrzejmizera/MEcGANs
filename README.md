@@ -25,9 +25,16 @@ To run MEcGANs on one of the datasets described in the manuscript, please take t
 
 The McGANs_modified folder provides the implementation of the original McGANs method where the generation of clouded images has been modified to comply with the method employed in MEcGANs. The original code of McGANs can be found <a href="https://github.com/enomotokenji/mcgan-cvprw2017-chainer">here</a>. The modified implementation of McGANs can be run in the same way as MEcGANs.
 
-
-# Trained Model Checkpoints
-
 # Results
 
 The complete sets of result presented in the manuscript are made available <a href="">here</a>.
+
+# Trained Model Checkpoints
+
+Model checkpoints of the individual experiments described in the manuscript can be downloaded from [here](). 
+
+A checkpoint can be loaded with the follwoing command, which restarts the training from the chechpoint and continues training till the requested number of iterations in the configs/config_nirrgb2rgbcloud.yml file is reached.
+
+```
+> CUDA_VISIBLE_DEVICES=0 python train_pix2pix.py --config_path configs/config_nirrgb2rgbcloud.yml --results_dir <folder_where_the_results_are_saved> --snapshot <snapshot_iter_file>
+```
