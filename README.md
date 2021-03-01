@@ -19,10 +19,10 @@ To run MEcGANs on one of the datasets described in the manuscript, please follow
 3. Replace the MEcGANs/config/config_nirrgb2rgbcloud.yml with a config_nirrgb2rgbcloud.yml file provided for specific a dataset in one of the subfolders of 'Data/datasets'.
 4. In the replaced config_nirrgb2rgbcloud.yml file, set the intended NIR cloud penetrability parameter by providing the value of (1 - NIR cloud penetrability) under dataset -> args -> args_train -> nir_cloud_penetrability and dataset -> args -> args_test -> nir_cloud_penetrability.
 5. The code of MEcGANs is run in the same way in as the code of McGANs, i.e. by executing
-
 ```
 > CUDA_VISIBLE_DEVICES=0 python train_pix2pix.py --config_path configs/config_nirrgb2rgbcloud.yml --results_dir <folder_where_the_results_are_saved>
 ```
+on a GPU-equipped machine.
 
 The McGANs folder provides the implementation of the original McGANs method, where the generation of clouded images has been modified to comply with the method employed in MEcGANs. The original code of McGANs can be found <a href="https://github.com/enomotokenji/mcgan-cvprw2017-chainer">here</a>.
 
