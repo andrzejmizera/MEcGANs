@@ -1,6 +1,6 @@
 # Cloud Removal from Satellite Imagery using Multispectral Edge-filtered Conditional Generative Adversarial Networks
 
-This repository contains the code, models, datasets, and results of the manuscript titled "Cloud Removal from Satellite Imagery using Multispectral Edge-filtered Conditional Generative Adversarial Networks".
+This repository provides the code, models, datasets, and results of the manuscript titled "Cloud Removal from Satellite Imagery using Multispectral Edge-filtered Conditional Generative Adversarial Networks".
 
 # Datasets
 
