@@ -30,4 +30,4 @@ The McGANs_modified folder provides the implementation of the original McGANs me
 
 # Results
 
-The complete sets of result presented in the manuscript are provided <a href="">here</a>.
+The complete sets of result presented in the manuscript are made available <a href="">here</a>.
