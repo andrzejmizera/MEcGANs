@@ -19,7 +19,7 @@ To run MEcGANs on one of the datasets described in the manuscript, please follow
 5. The code of MEcGANs is run in the same way in as the code of McGANs, i.e. by executing
 
 ```
-'> CUDA_VISIBLE_DEVICES=0 python train_pix2pix.py --config_path configs/config_nirrgb2rgbcloud.yml --results_dir <folder_where_the_results_are_saved>'
+\> CUDA_VISIBLE_DEVICES=0 python train_pix2pix.py --config_path configs/config_nirrgb2rgbcloud.yml --results_dir <folder_where_the_results_are_saved>'
 ```
 
 The McGANs folder provides the implementation of the original McGANs method, where the generation of clouded images has been modified to comply with the method employed in MEcGANs. The original code of McGANs can be found <a href="https://github.com/enomotokenji/mcgan-cvprw2017-chainer">here</a>.
