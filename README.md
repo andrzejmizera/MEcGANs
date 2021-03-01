@@ -10,13 +10,14 @@ The datasets described in the manuscript, i.e. the edge-intensive, large, and sm
 
 The MEcGANs folder contains the implementation of our method. It extends the original McGANs method introduced in <a href="https://arxiv.org/abs/1710.04835">K. Enomoto et. al. Filmy Cloud Removal on Satellite Imagery with Multispectral Conditional Generative Adversarial Nets. In Proc. IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), pp. 1533-1541, 2017.</a>
 
-To run MEcGANs on one of the datasets, please follow the following steps.
+To run MEcGANs on one of the datasets described in the manuscript, please follow the following steps.
 
 1. Download MEcGANs.
-2. Download the 'Data' folder available <a href="">here</a> and place it into the MEcGANs folder downloaded in Step 1.
+2. Download the 'Data' folder available [here]() and place it into the MEcGANs folder downloaded in Step 1.
 3. Replace the MEcGANs/config/config_nirrgb2rgbcloud.yml with a config_nirrgb2rgbcloud.yml file provided for specific a dataset in one of the subfolders of 'Data/datasets'.
-4. In the replaced config_nirrgb2rgbcloud.yml file, set the intended NIR cloud penetrability parameter by providing the same value of (1 - NIR cloud penetrability) under dataset -> args -> args_train -> nir_cloud_penetrability and dataset -> args -> args_test -> nir_cloud_penetrability.
-5. Run the 
+4. In the replaced config_nirrgb2rgbcloud.yml file, set the intended NIR cloud penetrability parameter by providing the value of (1 - NIR cloud penetrability) under dataset -> args -> args_train -> nir_cloud_penetrability and dataset -> args -> args_test -> nir_cloud_penetrability.
+5. The code of MEcGANs is run in the same way in as the code of McGANs, i.e. by executing
+```> 
 
 The McGANs folder provides the implementation of the original McGANs method, where the generation of clouded images has been modified to comply with the method employed in MEcGANs. The original code of McGANs can be found <a href="https://github.com/enomotokenji/mcgan-cvprw2017-chainer">here</a>.
 
