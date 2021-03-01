@@ -12,7 +12,7 @@ The MEcGANs folder contains the implementation of our method. It extends the ori
 
 To setup the Python environment for MEcGANs, please consult the 'Requirements' section of McGANs' README.md available [here](https://github.com/enomotokenji/mcgan-cvprw2017-chainer).
 
-To run MEcGANs on one of the datasets described in the manuscript, please follow the following steps.
+To run MEcGANs on one of the datasets described in the manuscript, please take the following steps.
 
 1. Download MEcGANs.
 2. Download the 'Data' folder available [here]() and place it into the MEcGANs folder downloaded in Step 1.
