@@ -1,14 +1,16 @@
 # Cloud Removal from Satellite Imagery using Multispectral Edge-filtered Conditional Generative Adversarial Networks
 
-This repository contains the code, models, datasets, and results of the manuscript titled "Cloud Removal from Satellite Imagery using Multispectral Edge-filtered Conditional Generative Adversarial Networks" submitted to the IEEE Geoscience and Remote Sensing Letters journal.
+This repository contains the code, models, datasets, and results of the manuscript titled "Cloud Removal from Satellite Imagery using Multispectral Edge-filtered Conditional Generative Adversarial Networks".
 
 # Datasets
 
 The datasets described in the manuscript, i.e. the edge-intensive, large, and small datasets, are made available <a href="">here</a>.
 
-# Code
+# Code & Installation
 
 The MEcGANs folder contains the implementation of our method. It extends the original McGANs method introduced in <a href="https://arxiv.org/abs/1710.04835">K. Enomoto et. al. Filmy Cloud Removal on Satellite Imagery with Multispectral Conditional Generative Adversarial Nets. In Proc. IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), pp. 1533-1541, 2017.</a>
+
+To setup the Python environment for MEcGANs, please consult the 'Requirements' section of [McGANs readme](https://github.com/enomotokenji/mcgan-cvprw2017-chainer).
 
 To run MEcGANs on one of the datasets described in the manuscript, please follow the following steps.
 
