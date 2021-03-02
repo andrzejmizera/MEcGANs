@@ -33,7 +33,7 @@ The complete sets of results presented in the manuscript are made available <a h
 
 Model checkpoints of the individual experiments described in the manuscript can be downloaded from [here](). 
 
-A checkpoint can be loaded with the following command, which restarts the training from the chechpoint and runs it till the requested number of iterations specified in the configs/config_nirrgb2rgbcloud.yml file is reached.
+A checkpoint can be loaded with the following command, which resumes the training from the chechpoint and runs it till the requested number of iterations specified in the configs/config_nirrgb2rgbcloud.yml file is reached.
 
 ```
 > CUDA_VISIBLE_DEVICES=0 python train_pix2pix.py --config_path configs/config_nirrgb2rgbcloud.yml --results_dir <folder_where_the_results_are_saved> --snapshot <snapshot_iter_file>
