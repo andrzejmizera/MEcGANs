@@ -10,7 +10,7 @@ The datasets described in the manuscript, i.e. the edge-intensive, large, and sm
 
 The MEcGANs folder contains the implementation of our method. It extends the original McGANs method introduced in <a href="https://arxiv.org/abs/1710.04835">K. Enomoto et. al. Filmy Cloud Removal on Satellite Imagery with Multispectral Conditional Generative Adversarial Nets. In Proc. IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), pp. 1533-1541, 2017.</a>
 
-To setup the Python environment for MEcGANs, please consult the 'Requirements' section of McGANs' README.md available [here](https://github.com/enomotokenji/mcgan-cvprw2017-chainer). MEcGANs should be run on a GPU-equipped machine.
+To setup the Python environment for MEcGANs, please consult the 'Requirements' section of McGANs' README.md available [here](https://github.com/enomotokenji/mcgan-cvprw2017-chainer). The environment should be installed and MEcGANs run on a GPU-equipped machine.
 
 To run MEcGANs on one of the datasets described in the manuscript, please take the following steps.
 
