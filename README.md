@@ -14,10 +14,10 @@ To setup the Python environment for MEcGANs, please consult the 'Requirements' s
 
 To run MEcGANs on one of the datasets described in the manuscript, please take the following steps.
 
-1. Download the MEcGANs folder and the Config_files folder to locations of your choice.
-2. Download the 'Data.zip' file available [here]() and unzip it directly in the MEcGANs folder downloaded in Step 1, i.e. the data should be available in 'MEcGANs/Data'.
-3. Edit the settings in the MEcGANs/config/config_nirrgb2rgbcloud.yml file or replace it with one of the config_nirrgb2rgbcloud.yml files provided for the three datasets in the respective subfolders of 'Config_files/MEcGANs' where 'Config_files' is the folder downloaded in Step 1.
-4. In the replaced config_nirrgb2rgbcloud.yml file, set the intended NIR cloud penetrability parameter by providing the value of (1 - NIR cloud penetrability) under dataset -> args -> args_train -> nir_cloud_penetrability and dataset -> args -> args_test -> nir_cloud_penetrability. For example, 1% and 0.5% NIR cloud penetrabilities are set with 0.99 and 0.995, respectively.
+1. Download the 'MEcGANs' folder and the 'Config_files' folder to locations of your choice.
+2. Download the 'Data.zip' file available [here]() and unzip it directly in the 'MEcGANs' folder downloaded in Step 1, i.e. the data should be available in 'MEcGANs/Data'.
+3. Edit the settings in the 'MEcGANs/config/config_nirrgb2rgbcloud.yml' file or replace it with one of the 'config_nirrgb2rgbcloud.yml' files provided for the three datasets in the respective subfolders of 'Config_files/MEcGANs' where 'Config_files' is the folder downloaded in Step 1.
+4. In the edited or replaced 'MEcGANs/config/config_nirrgb2rgbcloud.yml' file, set the intended NIR cloud penetrability parameter by providing the value of (1 - NIR cloud penetrability) under dataset -> args -> args_train -> nir_cloud_penetrability and dataset -> args -> args_test -> nir_cloud_penetrability. For example, 1% and 0.5% NIR cloud penetrabilities are set with 0.99 and 0.995, respectively.
 5. The code of MEcGANs is run in the same way in as the original code of McGANs, i.e. by executing the following command on a GPU-equipped machine:
 ```
 > CUDA_VISIBLE_DEVICES=0 python train_pix2pix.py --config_path configs/config_nirrgb2rgbcloud.yml --results_dir <folder_where_the_results_are_saved>
