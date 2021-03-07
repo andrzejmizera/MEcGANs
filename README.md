@@ -23,7 +23,7 @@ To run MEcGANs on one of the datasets described in the manuscript, please take t
 > CUDA_VISIBLE_DEVICES=0 python train_pix2pix.py --config_path configs/config_nirrgb2rgbcloud.yml --results_dir <folder_where_the_results_are_saved>
 ```
 
-The McGANs_modified folder provides the implementation of the original McGANs method where the generation of clouded images has been modified to comply with the method employed in MEcGANs, i.e. clouded RGB and NIR images are synthesised as described in the manuscript and the discriminator of McGANs is presented with clouded NIR images instead of the cloud-free ones as in the original version. The original code of McGANs can be found <a href="https://github.com/enomotokenji/mcgan-cvprw2017-chainer">here</a>. The modified implementation of McGANs can be run in the same way as MEcGANs; for this, follow the five steps above with 'McGANs_modified' replacing 'MEcGANs'.
+The McGANs_modified folder provides the implementation of the original McGANs method where the generation of clouded images has been modified to comply with the method employed in MEcGANs, i.e. clouded RGB and NIR images are synthesised as described in the manuscript and the discriminator of McGANs is presented with clouded NIR images instead of cloud-free ones as in the original version. The original code of McGANs can be found <a href="https://github.com/enomotokenji/mcgan-cvprw2017-chainer">here</a>. The modified implementation of McGANs can be run in the same way as MEcGANs; for this, follow the five steps above with 'McGANs_modified' replacing 'MEcGANs'.
 
 # Results
 
