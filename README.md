@@ -42,6 +42,6 @@ A checkpoint can be loaded with the following command, which resumes the trainin
 For example, to load the model of MEcGANs trained for 500K iterations with the edge-intensive dataset with NIR cloud penetrability set to 1%, please use the following command from the MEcGANs folder:
 
 ```
-> CUDA_VISIBLE_DEVICES=0 python train_pix2pix.py --config_path configs/config_nirrgb2rgbcloud.yml --results_dir <folder_where_the_results_are_saved> --snapshot ../Checkpoints/edge-intensive_dataset/NIR_penetrability_0.01/MEcGANs/snapshot_iter_500000
+> CUDA_VISIBLE_DEVICES=0 python train_pix2pix.py --config_path ../Config_files/MEcGANs/edge-intensive_dataset/config_nirrgb2rgbcloud.yml --results_dir <folder_where_the_results_are_saved> --snapshot ../Checkpoints/edge-intensive_dataset/NIR_penetrability_0.01/MEcGANs/snapshot_iter_500000
 ```
 
