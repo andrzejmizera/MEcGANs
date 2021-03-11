@@ -45,3 +45,9 @@ For example, to load the model of MEcGANs trained for 500K iterations with the e
 > CUDA_VISIBLE_DEVICES=0 python train_pix2pix.py --config_path ../Config_files/MEcGANs/edge-intensive_dataset/config_nirrgb2rgbcloud.yml --results_dir <folder_where_the_results_are_saved> --snapshot ../Checkpoints/edge-intensive_dataset/NIR_penetrability_0.01/MEcGANs/snapshot_iter_500000
 ```
 
+To run a pretrained generator on a test dataset, please use the following command from the MEcGANs folder:
+
+```
+
+```
+
