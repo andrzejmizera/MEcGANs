@@ -48,5 +48,5 @@ For example, to load the model of MEcGANs trained for 500K iterations with the e
 To run a pretrained generator on a test dataset, please use the following command from the MEcGANs folder:
 
 ```
-CUDA_VISIBLE_DEVICES=0 python test.py --dir_nir <path_to_clouded_nir_images_dir> --dir_rgb <path_to_clouded_rgb_images_dir> --imlist_nir <path_to_clouded_nir_files_list file> --imlist_rgb <path_to_clouded_rgb_files_list file> --results_dir <path_to_results_dir> --config_path <path_to_config_nirrgb2rgbcloud.yml> --gen_model <path_to_Generator_<iterations>.npz>
+> CUDA_VISIBLE_DEVICES=0 python test.py --dir_nir <path_to_clouded_nir_images_dir> --dir_rgb <path_to_clouded_rgb_images_dir> --imlist_nir <path_to_clouded_nir_files_list> --imlist_rgb <path_to_clouded_rgb_files_list> --results_dir <path_to_results_dir> --config_path <path_to_config_nirrgb2rgbcloud.yml> --gen_model <path_to_Generator_<iterations>.npz>
 ```
