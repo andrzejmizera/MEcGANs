@@ -31,7 +31,7 @@ The complete sets of results presented in the manuscript are made available <a h
 
 # Running of trained generators
 
-Saved generator models used in the experiments described in the manuscript can be obtained by downloading the 'Results.zip' folder from [here](https://data.mendeley.com/datasets/jk3wr7crj7/1).
+Saved generator models used in the experiments described in the manuscript are placed in the 'Checkpoints' folder available [here](https://data.mendeley.com/datasets/jk3wr7crj7/1). The saved generator model files are named Generator_<number of training iteration>.npz.
 
 To load and run a pretrained generator on an intended dataset of clouded RGB and co-registered NIR images, please use the following command from the MEcGANs folder:
 
