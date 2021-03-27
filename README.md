@@ -27,7 +27,7 @@ The McGANs_modified folder provides the implementation of the original McGANs me
 
 # Results
 
-The complete sets of results presented in the manuscript are made available <a href="">here</a>.
+The complete sets of results presented in the manuscript are made available [here](https://data.mendeley.com/datasets/jk3wr7crj7/1).
 
 # Running of trained generators
 
