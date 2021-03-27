@@ -4,7 +4,7 @@ This repository provides the code, models, datasets, and results of the manuscri
 
 # Datasets
 
-The datasets described in the manuscript, i.e. the edge-intensive, large, and small datasets, are made available <a href="">here</a>.
+The datasets described in the manuscript, i.e., the edge-intensive, large, and small datasets, are made available via Mendeley Data and can be accessed [here](https://data.mendeley.com/datasets/jk3wr7crj7/1).
 
 # Code & Installation
 
@@ -15,7 +15,7 @@ To setup the Python environment for MEcGANs, please consult the 'Requirements' s
 To run MEcGANs on one of the datasets described in the manuscript, please take the following steps.
 
 1. Download the 'MEcGANs' folder and the 'Config_files' folder to locations of your choice.
-2. Download the 'Data.zip' file available [here]() and unzip it directly in the 'MEcGANs' folder downloaded in Step 1, i.e. the data should be available in 'MEcGANs/Data'.
+2. Download the 'Data.zip' file available [here](https://data.mendeley.com/datasets/jk3wr7crj7/1) and unzip it directly in the 'MEcGANs' folder downloaded in Step 1, i.e. the data should be available in 'MEcGANs/Data'.
 3. Edit the settings in the 'MEcGANs/config/config_nirrgb2rgbcloud.yml' file or replace it with one of the 'config_nirrgb2rgbcloud.yml' files provided for the three datasets in the respective subfolders of 'Config_files/MEcGANs' where 'Config_files' is the folder downloaded in Step 1.
 4. In the edited or replaced 'MEcGANs/config/config_nirrgb2rgbcloud.yml' file, set the intended NIR cloud penetrability parameter by providing the value of (1 - NIR cloud penetrability) under dataset -> args -> args_train -> nir_cloud_penetrability and dataset -> args -> args_test -> nir_cloud_penetrability. For example, 1% and 0.5% NIR cloud penetrabilities are set with 0.99 and 0.995, respectively.
 5. The code of MEcGANs is run in the same way in as the original code of McGANs, i.e. by executing the following command on a GPU-equipped machine from the MEcGANs folder:
@@ -31,6 +31,8 @@ The complete sets of results presented in the manuscript are made available <a h
 
 # Running of trained generators
 
+Saved generator models used in the experiments described in the manuscript can be obtained by downloading the 'Results.zip' folder from [here](https://data.mendeley.com/datasets/jk3wr7crj7/1).
+
 To load and run a pretrained generator on an intended dataset of clouded RGB and co-registered NIR images, please use the following command from the MEcGANs folder:
 
 ```
@@ -39,7 +41,7 @@ To load and run a pretrained generator on an intended dataset of clouded RGB and
 
 # Trained Model Checkpoints
 
-Model checkpoints of the individual experiments described in the manuscript can be downloaded from [here](). 
+Model checkpoints of the individual experiments described in the manuscript can be downloaded from [here](https://data.mendeley.com/datasets/jk3wr7crj7/1). 
 
 A checkpoint can be loaded with the following command, which resumes the training from the chechpoint and runs it till the requested number of iterations specified in the configs/config_nirrgb2rgbcloud.yml file is reached.
 
