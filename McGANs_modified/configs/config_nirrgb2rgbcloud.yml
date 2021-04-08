@@ -33,7 +33,7 @@ dataset:
       dir_nir: Data/images/NIR
       dir_rgb: Data/images/RGB
       dir_cloud_mask: Data/images/cloud_mask
-      dir_cloud:
+      dir_cloud: Data/images
       rgb_cloud_file: Data/images/real_cloud_rgb_image.png
       nir_cloud_file: Data/images/real_cloud_nir_image.png
       nir_cloud_penetrability: 0.99
@@ -47,7 +47,7 @@ dataset:
       dir_nir: Data/images/NIR
       dir_rgb: Data/images/RGB
       dir_cloud_mask: Data/images/cloud_mask
-      dir_cloud:
+      dir_cloud: Data/images
       rgb_cloud_file: Data/images/real_cloud_rgb_image.png
       nir_cloud_file: Data/images/real_cloud_nir_image.png
       nir_cloud_penetrability: 0.99
