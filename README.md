@@ -15,15 +15,15 @@ To setup the Python environment for MEcGANs, please consult the 'Requirements' s
 To run MEcGANs on one of the datasets described in the manuscript, please take the following steps.
 
 1. Download the 'MEcGANs' folder and the 'Config_files' folder to locations of your choice.
-2. Download the 'Data.zip' file available [here](https://data.mendeley.com/datasets/jk3wr7crj7/2) and unzip it directly in the 'MEcGANs' folder downloaded in Step 1, i.e. the data should be available in 'MEcGANs/Data'.
+2. Download the 'Data.zip' file available [here](https://data.mendeley.com/datasets/jk3wr7crj7/2) and unzip it directly in the 'MEcGANs' folder downloaded in Step 1, i.e., the data should be available in 'MEcGANs/Data'.
 3. Edit the settings in the 'MEcGANs/config/config_nirrgb2rgbcloud.yml' file or replace it with one of the 'config_nirrgb2rgbcloud.yml' files provided for the three datasets in the respective subfolders of 'Config_files/MEcGANs' where 'Config_files' is the folder downloaded in Step 1.
 4. In the edited or replaced 'MEcGANs/config/config_nirrgb2rgbcloud.yml' file, set the intended NIR cloud penetrability parameter by providing the value of (1 - NIR cloud penetrability) under dataset -> args -> args_train -> nir_cloud_penetrability and dataset -> args -> args_test -> nir_cloud_penetrability. For example, 1% and 0.5% NIR cloud penetrabilities are set with 0.99 and 0.995, respectively.
-5. The code of MEcGANs is run in the same way in as the original code of McGANs, i.e. by executing the following command on a GPU-equipped machine from the MEcGANs folder:
+5. The code of MEcGANs is run in the same way in as the original code of McGANs, i.e., by executing the following command on a GPU-equipped machine from the MEcGANs folder:
 ```
 > CUDA_VISIBLE_DEVICES=0 python train_pix2pix.py --config_path configs/config_nirrgb2rgbcloud.yml --results_dir <folder_where_the_results_are_saved>
 ```
 
-The McGANs_modified folder provides the implementation of the original McGANs method where the generation of clouded images has been modified to comply with the method employed in MEcGANs, i.e. clouded RGB and NIR images are synthesised as described in the manuscript and the discriminator of McGANs is presented with clouded NIR images instead of cloud-free ones as in the original version. The original code of McGANs can be found <a href="https://github.com/enomotokenji/mcgan-cvprw2017-chainer">here</a>. The modified implementation of McGANs can be run in the same way as MEcGANs; for this, follow the five steps above with 'McGANs_modified' replacing 'MEcGANs'.
+The McGANs_modified folder provides the implementation of the original McGANs method where the generation of clouded images has been modified to comply with the method employed in MEcGANs, i.e., clouded RGB and NIR images are synthesised as described in the manuscript and the discriminator of McGANs is presented with clouded NIR images instead of cloud-free ones as in the original version. The original code of McGANs can be found <a href="https://github.com/enomotokenji/mcgan-cvprw2017-chainer">here</a>. The modified implementation of McGANs can be run in the same way as MEcGANs; for this, follow the five steps above with 'McGANs_modified' replacing 'MEcGANs'.
 
 # Results
 
