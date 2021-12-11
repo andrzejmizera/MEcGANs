@@ -1,0 +1,77 @@
+batchsize: 1
+batchsize_test: 10
+iteration: 500000
+iteration_decay_start: 400000
+seed: 0
+display_interval: 100
+progressbar_interval: 100
+snapshot_interval: 100000
+evaluation_interval: 50000
+
+models:
+  generator:
+    fn: gen_models/generator_pix2pix.py
+    name: Generator
+    args:
+      in_ch: 4
+      out_ch: 4
+      normalization: True
+
+  discriminator:
+      fn: dis_models/discriminator.py
+      name: ConcatDiscriminator
+      args:
+        in_ch: 4
+        out_ch: 4
+
+dataset:
+  fn: data.py
+  name: train_test_dataset
+  args:
+    train_class_name: NIRRGB2RGBCLOUD_SYNTHETIC
+    args_train:
+      dir_nir: Data/Paris_dataset/images/NIR
+      dir_rgb: Data/Paris_dataset/images/RGB
+      with_cloud_mask: True
+      dir_cloud_mask: Data/Paris_dataset/images/cloud_mask
+      dir_cloud: Data/Paris_dataset/images
+      rgb_cloud_file: real_cloud_rgb_image.png
+      nir_cloud_file: real_cloud_nir_image.png
+      nir_cloud_penetrability: 0.99
+      imlist_nir: Data/Paris_dataset/datasets/imlist_train.txt
+      imlist_rgb: Data/Paris_dataset/datasets/imlist_train.txt
+      imlist_cloud_mask: Data/Paris_dataset/datasets/imlist_train.txt
+      size: 256
+      augmentation: False
+    test_class_name: NIRRGB2RGBCLOUD_SYNTHETIC
+    args_test:
+      dir_nir: Data/Paris_dataset/images/NIR
+      dir_rgb: Data/Paris_dataset/images/RGB
+      with_cloud_mask: True
+      dir_cloud_mask: Data/Paris_dataset/images/cloud_mask
+      dir_cloud: Data/Paris_dataset/images
+      rgb_cloud_file: real_cloud_rgb_image.png
+      nir_cloud_file: real_cloud_nir_image.png
+      nir_cloud_penetrability: 0.99
+      imlist_nir: Data/Paris_dataset/datasets/imlist_test.txt
+      imlist_rgb: Data/Paris_dataset/datasets/imlist_test.txt
+      imlist_cloud_mask: Data/Paris_dataset/datasets/imlist_test.txt
+      size: 256
+      augmentation: False
+
+adam:
+  alpha: 0.0002
+  beta1: 0.5
+  beta2: 0.999
+
+updater:
+  fn: updater.py
+  name: Updater
+  args:
+    n_dis: 1
+    loss_type: dcgan
+    weight_l1: 100
+
+evaluation:
+  fn: evaluation.py
+  name: out_image
