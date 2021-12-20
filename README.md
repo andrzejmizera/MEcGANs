@@ -28,29 +28,3 @@ The McGANs_modified folder provides the implementation of the original McGANs me
 # Results
 
 The complete sets of results presented in the manuscript are made available [here](https://data.mendeley.com/datasets/jk3wr7crj7/3).
-
-# Running of trained generators
-
-Saved generator models used in the experiments described in the manuscript are placed in the 'Checkpoints' folder available [here](https://data.mendeley.com/datasets/jk3wr7crj7/3). The saved generator model files are named Generator_<number of training iteration>.npz.
-
-To load and run a pretrained generator on an intended dataset of clouded RGB and co-registered NIR images, please use the following command from the MEcGANs folder:
-
-```
-> CUDA_VISIBLE_DEVICES=0 python test.py --dir_nir <path_to_clouded_nir_images_dir> --dir_rgb <path_to_clouded_rgb_images_dir> --imlist_nir <path_to_clouded_nir_files_list> --imlist_rgb <path_to_clouded_rgb_files_list> --results_dir <path_to_results_dir> --config_path <path_to_config_nirrgb2rgbcloud.yml> --gen_model <path_to_Generator_<iterations>.npz>
-```
-
-# Trained Model Checkpoints
-
-Model checkpoints of the individual experiments described in the manuscript can be downloaded from [here](https://data.mendeley.com/datasets/jk3wr7crj7/2). 
-
-A checkpoint can be loaded with the following command, which resumes the training from the chechpoint and runs it till the requested number of iterations specified in the configs/config_nirrgb2rgbcloud.yml file is reached.
-
-```
-> CUDA_VISIBLE_DEVICES=0 python train_pix2pix.py --config_path configs/config_nirrgb2rgbcloud.yml --results_dir <folder_where_the_results_are_saved> --snapshot <snapshot_iter_file>
-```
-
-For example, to load the model of MEcGANs trained for 500K iterations with the edge-intensive dataset and NIR cloud penetrability set to 1%, please use the following command from the MEcGANs folder:
-
-```
-> CUDA_VISIBLE_DEVICES=0 python train_pix2pix.py --config_path ../Config_files/MEcGANs/edge-intensive_dataset/config_nirrgb2rgbcloud.yml --results_dir <folder_where_the_results_are_saved> --snapshot ../Checkpoints/edge-intensive_dataset/NIR_penetrability_0.01/MEcGANs/snapshot_iter_500000
-```
