@@ -4,7 +4,7 @@ This repository provides the code, datasets, and the full set of results for the
 
 # Datasets
 
-The datasets described in the manuscript, i.e., the 'Berlin dataset' and the 'Paris dataset' are made available via Mendeley Data and can be accessed [here](https://data.mendeley.com/datasets/jk3wr7crj7/3).
+The datasets described in the manuscript, i.e., the 'Berlin dataset' and the 'Paris dataset', are made available via Mendeley Data and can be accessed [here](https://data.mendeley.com/datasets/jk3wr7crj7/3).
 
 # Code & Installation
 
