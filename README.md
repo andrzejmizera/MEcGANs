@@ -1,6 +1,6 @@
 # Cloud Removal from Satellite Imagery using Multispectral Edge-filtered Conditional Generative Adversarial Networks
 
-This repository provides the code, models, datasets, and the full set of results for the manuscript titled "Cloud Removal from Satellite Imagery using Multispectral Edge-filtered Conditional Generative Adversarial Networks" by Cengis Hasan, Ross Horne, Sjouke Mauw, and Andrzej Mizera.
+This repository provides the code, datasets, and the full set of results for the manuscript titled "Cloud Removal from Satellite Imagery using Multispectral Edge-filtered Conditional Generative Adversarial Networks" by Cengis Hasan, Ross Horne, Sjouke Mauw, and Andrzej Mizera.
 
 # Datasets
 
