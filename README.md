@@ -27,11 +27,11 @@ The McGANs_modified folder provides the implementation of the original McGANs me
 
 # Results
 
-The complete sets of results presented in the manuscript are made available [here](https://data.mendeley.com/datasets/jk3wr7crj7/2).
+The complete sets of results presented in the manuscript are made available [here](https://data.mendeley.com/datasets/jk3wr7crj7/3).
 
 # Running of trained generators
 
-Saved generator models used in the experiments described in the manuscript are placed in the 'Checkpoints' folder available [here](https://data.mendeley.com/datasets/jk3wr7crj7/2). The saved generator model files are named Generator_<number of training iteration>.npz.
+Saved generator models used in the experiments described in the manuscript are placed in the 'Checkpoints' folder available [here](https://data.mendeley.com/datasets/jk3wr7crj7/3). The saved generator model files are named Generator_<number of training iteration>.npz.
 
 To load and run a pretrained generator on an intended dataset of clouded RGB and co-registered NIR images, please use the following command from the MEcGANs folder:
 
